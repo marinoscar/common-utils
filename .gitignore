@@ -1,0 +1,7 @@
+.DS_Store
+.svn
+.project
+.*.swp
+gmon.out
+v8.log
+node_modules
