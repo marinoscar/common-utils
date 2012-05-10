@@ -1,5 +1,5 @@
 var   everyauth = require('everyauth')
-    , everyauthRoot = __dirname + '/..';
+    , appInfo   = require('./packageInfo');
 
 var usersByGoogleId = {};
 
@@ -20,8 +20,8 @@ function addUser (source, sourceUser) {
 }
 
 everyauth.google
-  .appId('157973764002.apps.googleusercontent.com')
-  .appSecret('o3lyunW2nX1MCmerBjNl-jaH')
+  .appId(appInfo.googleAppId)
+  .appSecret(appInfo.googleSecret)
   .scope('https://www.googleapis.com/auth/userinfo.profile https://www.google.com/m8/feeds/') // What you want access to
   .handleAuthCallbackError( function (req, res) {
   })
@@ -30,6 +30,6 @@ everyauth.google
     googleUser.expiresIn = extra.expires_in;
     return usersByGoogleId[googleUser.id] || (usersByGoogleId[googleUser.id] = addUser('google', googleUser));
   })
-  .redirectPath('/');
+  .redirectPath(appInfo.authenticationRedirect);
 
 module.exports = everyauth;

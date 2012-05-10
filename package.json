@@ -15,4 +15,7 @@
   ,"repository" : { 
   	"type" : "git"
   , "url" : "git@github.com:marinoscar/common-utils.git"}
+  , "googleAppId": "157973764002.apps.googleusercontent.com"
+  , "googleSecret" : "o3lyunW2nX1MCmerBjNl-jaH"
+  , "authenticationRedirect" : "/"
 }
