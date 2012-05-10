@@ -1,0 +1,11 @@
+{
+    "name": "node-utils"
+  , "version": "0.0.1"
+  , "private": false
+  , "dependencies": {
+      "express": "2.5.8"
+    , "jade": ">= 0.0.1"
+    , "everyauth": ">= 0.2.20"
+    , "connect": ">= 2.2.1"
+  }
+}
