@@ -1,5 +1,6 @@
 {
-    "name": "node-utils"
+    "name": "common-utils"
+  , "description" : "common node utilities"  
   , "version": "0.0.1"
   , "private": false
   , "dependencies": {
@@ -8,4 +9,9 @@
     , "everyauth": ">= 0.2.20"
     , "connect": ">= 2.2.1"
   }
+  , "author": "Oscar Marin <oscar@marin.cr> (http://marin.cr)"
+  , "homepage": "https://github.com/marinoscar/common-utils"
+  ,"repository" : { 
+  	"type" : "git"
+  , "url" : "git@github.com:marinoscar/common-utils.git"} 
 }
