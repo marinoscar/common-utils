@@ -19,6 +19,10 @@ function addUser (source, sourceUser) {
   return user;
 }
 
+everyauth.everymodule.moduleErrback( function (err) {
+  console.log(err);
+});
+
 everyauth.google
   .appId(appInfo.googleAppId)
   .appSecret(appInfo.googleSecret)
